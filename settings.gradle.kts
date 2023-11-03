@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AppTeste"
-include ':app'
+rootProject.name = "ProjetoPDC"
+include(":app")
