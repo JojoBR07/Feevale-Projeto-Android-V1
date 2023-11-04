@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        adapterThreat.notifyDataSetChanged();
+    }
+
     public void changeToAdd(View view){
         Intent it = new Intent(getBaseContext(), Add.class);
         startActivity(it);
